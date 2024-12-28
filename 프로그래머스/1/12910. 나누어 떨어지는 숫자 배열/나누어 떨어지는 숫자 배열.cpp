@@ -28,10 +28,11 @@ vector<int> solution(vector<int> array, int divisor) {
 			answer.push_back(array[i]);
 		} 
 	}
- 	if (answer.size() == 0) {
+    if (answer.size() == 0) {
 		answer.push_back(-1);
 	}
-    	SelectionSort(answer);
-		
+    
+	SelectionSort(answer);
+
 	return answer;
 }
