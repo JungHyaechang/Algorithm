@@ -4,7 +4,7 @@ using namespace std;
 
 vector<int> solution (vector<int> arr) {
 	
-		int minIdx = 0;
+	int minIdx = 0;
 	if (arr.size() == 1) {
 		arr.erase(arr.begin());
 		arr.push_back(-1);
