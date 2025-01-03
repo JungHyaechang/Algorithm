@@ -4,7 +4,7 @@
 using namespace std;
 
 vector<int> solution(int n, int m) {
-       vector<int> answer;
+    vector<int> answer;
     vector<int> a; // n 의 약수
     vector<int> b; // m 의 약수
     vector<int> c; // n 의 배수
@@ -43,7 +43,8 @@ vector<int> solution(int n, int m) {
     for (int i = 0; i < n; i++) {
         d.push_back(m * (i + 1));
     }
-
+    
+    // 최소공배수
     int lcm = n * m;
     for (int i = 0; i < d.size(); i++) {
         auto it = find(c.begin(), c.end(), d[i]);
