@@ -16,7 +16,7 @@ string solution(vector<string> survey, vector<int> choices) {
 	
 	// 유형 점수 할당
 	for (int i = 0; i < choices.size(); i++) {
-		if		(choices[i] == 1) category[survey[i][0]] += 3;
+		if (choices[i] == 1) category[survey[i][0]] += 3;
 		else if (choices[i] == 2) category[survey[i][0]] += 2;
 		else if (choices[i] == 3) category[survey[i][0]] += 1;
 		else if (choices[i] == 4) continue;
