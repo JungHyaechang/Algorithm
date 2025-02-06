@@ -14,9 +14,9 @@ vector<int> solution(vector<string> wallpaper) {
 	for(int i = 0; i < wallpaper.size(); i++) {
 		auto it = wallpaper[i].find('#');
 		if (it != string::npos) {
-            if (startline == 51){
-                startline = i;
-            }
+           		if (startline == 51){
+                	startline = i;
+            		}
 			endline = i + 1;
 			
 			if (startrow >= it) {
