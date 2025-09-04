@@ -8,13 +8,13 @@ int solution(vector<int> A, vector<int> B)
 {
 	// 배열 A, B 오름차순 정렬
 	sort(A.begin(), A.end());
-	sort(B.begin(), B.end());
+	sort(B.begin(), B.end(), greater<>());
 
 	int accumulate = 0;
-	for (int i = 0; i < A.size(); i++)
+	for (int i = 0; i < A.size(); i++)	
 	{
 		int Temp = 0;
-		Temp = A[i] * B[B.size() - 1 - i];
+		Temp = A[i] * B[i];
 		accumulate += Temp;
 	}
 
